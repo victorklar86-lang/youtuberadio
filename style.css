@@ -36,7 +36,17 @@
     align-items: center;
     padding: 20px;
     text-align: center;
+}@keyframes pulse {
+    0% { box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.4); }
+    70% { box-shadow: 0 0 0 15px rgba(255, 0, 0, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(255, 0, 0, 0); }
 }
+
+.playing-animation {
+    animation: pulse 2s infinite;
+    border-radius: 50%;
+}
+
 
 /* La Botonera y Controles (Capa superior) */
 .controls-ui {
