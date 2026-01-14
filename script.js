@@ -41,6 +41,11 @@ function togglePlay() {
         document.getElementById('play-pause').innerText = "⏸";
     }
     isPlaying = !isPlaying;
+}const playBtn = document.getElementById('play-pause');
+if (isPlaying) {
+    playBtn.classList.add('playing-animation');
+} else {
+    playBtn.classList.remove('playing-animation');
 }
 
 function loadNewVideo() {
