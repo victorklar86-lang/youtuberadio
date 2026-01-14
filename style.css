@@ -99,4 +99,31 @@ input#youtube-url {
     height: 100%;
     background: #ff0000;
     border-radius: 10px;
+}.button-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    margin: 20px 0;
+    max-height: 150px;
+    overflow-y: auto; /* Por si añades más en el futuro */
 }
+
+.music-btn {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.music-btn:hover {
+    background: rgba(255, 0, 0, 0.6);
+    transform: translateX(5px);
+}
+
+/* Reutiliza el estilo de player-container y overlay del paso anterior */
+
