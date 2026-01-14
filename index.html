@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Audio Player Educativo</title>
+    <title>Radio Personalizada Sheets</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,24 +11,19 @@
         <div id="youtube-player"></div>
 
         <div class="overlay">
-            <div class="search-box">
-                <input type="text" id="youtube-url" placeholder="Pega el enlace de YouTube aquí...">
-                <button id="load-video">Cargar</button>
+            <h2 id="video-title">Selecciona una Pista</h2>
+            
+            <div id="button-container" class="button-list">
+                <p id="status">Cargando lista de reproducción...</p>
             </div>
-            
-            <h2 id="video-title">Reproductor Educativo</h2>
-            
+
             <div class="controls">
-                <button id="prev">⏮</button>
                 <button id="play-pause">▶</button>
-                <button id="next">⏭</button>
             </div>
-            
-            <div class="progress-container" id="progress-container">
+
+            <div class="progress-container">
                 <div class="progress-bar" id="progress-bar"></div>
             </div>
-            
-            <p id="status">Esperando API de YouTube...</p>
         </div>
     </div>
 
