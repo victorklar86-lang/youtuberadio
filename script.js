@@ -80,4 +80,7 @@ function updateProgressBar() {
 
 function onPlayerError(e) {
     document.getElementById('status').innerText = "Error al cargar video (posible restricción)";
-}
+}document.getElementById('volume-control').addEventListener('input', (e) => {
+    player.setVolume(e.target.value);
+});
+
